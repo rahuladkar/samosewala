@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #03142e, #6297e1);
+}
+
+nav {
+    display: flex;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    padding: 10px;
+}
+
+.logo {
+    padding: 0px 30px;
+    color: #fefefe;
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 10px 5px 53rem;
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+.navbar li a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: aqua;
+}
+
+.vpscet {
+    width: 100%;
+    height: 100%;
+}
+
+/* Services Section  */
+
+#services {
+    color: white;
+    padding: 50px 0;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    padding: 2px 50px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* About Us Section */
+
+#container {
+    display: block;
+    margin: 40px 30px 30px 30px;
+    padding: 10px 200px;
+
+}
+
+#container h2 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: #fefefe;
+    font-size: 2.2rem;
+}
+
+#container h3 {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: #fefefe;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+#container p {
+    color: azure;
+    margin: 30px 10px 10px 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 45%;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    padding: 8px 10px;
+}
+
+.btn:hover {
+    background-color: #6297e1;
+}
+
+footer {
+    background-color: #6297e1;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+hr {
+    border: 2px solid white;
+    border-style: dashed;
+}
+
+/* order button */
+
+.order {
+    margin-top: 50px;
+}
+
+.order img {
+    height: 300px;
+    width: 450px;
+    border-radius: 50px;
+    margin: 10px 35%;
+}
+
+.order button {
+    width: 200px;
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 40px 44%;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+}
+
+button span {
+    position: absolute;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+}
+
+button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+}
+
+button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+}
+
+/* Contact Us */
+
+#contact {
+    padding: 50px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fefefe;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fefefe;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
